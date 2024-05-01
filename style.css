@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    background-size: cover;
+    position: absolute;
+}
+
+.navbar{
+    background:white;
+    position:fixed;
+    width:100vw;
+    height:10vh;
+    display: flex;
+    align-items: center; 
+    z-index: 1;
+    border-bottom: 1px solid rgba(205, 155, 29, 0.5); /* Adjust color and opacity as needed */
+}
+
+.eesalogo img {
+    margin-left: 4vh;
+    margin-top: 1vh;
+    width: 35vw; /* Adjust width as needed */
+    height: 8vh; /* Adjust height as needed */
+    pointer-events: none; /* users cannot open picture in new tab or save picture */
+}
+
+/* Navagation Bar Menu*/
+.menu{
+    margin-left:9vw;
+}
+
+.menu ul{
+    display:flex;;
+}
+
+.menu ul li{
+    list-style: none;
+    margin-top:5vh;
+    margin-left: 1.5vw;
+    font-size: 1vw;
+    white-space: nowrap;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color:rgb(205, 155, 29);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    transition: ease-in-out 0.4s;
+}
+
+.menu ul li a:hover {
+    color: rgb(216, 185, 106);
+}
+
+/*Home Page SlideShow*/
+.slideshow-container-1 {
+    margin-top: 10vh;
+    border-top: 1px solid rgba(0, 0, 0, 0.2); /* Adjust color and opacity as needed */
+    position: relative;
+    display: flex;
+    width: 100%; 
+    height: 14vh; 
+    overflow: hidden; 
+    pointer-events: none;
+}
+
+.slideshow-container-2 {
+    border-top: 1px solid rgba(0, 0, 0, 0.2); /* Adjust color and opacity as needed */
+    position: relative;
+    display: flex;
+    width: 100%; 
+    height: 14vh; 
+    overflow: hidden; 
+    pointer-events: none;
+}
+
+.slideshow-container-3 {
+    border-top: 1px solid rgba(0, 0, 0, 0.2); /* Adjust color and opacity as needed */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* Adjust color and opacity as needed */
+    position: relative;
+    display: flex;
+    width: 100%; 
+    height: 14vh; 
+    overflow: hidden; 
+    pointer-events: none;
+}
+
+
+.slideshow-container img {
+    position: absolute; /* Keep absolute positioning for the images */
+    width: 100%; 
+    height: auto; /* Allow height to adjust based on image content */
+    transition: opacity 2s ease-in-out; /* Smooth transition for opacity */
+}
+
+/* Specific positions for each image */
+
+
+
+
+
+/* intro paragraph*/
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+
+    }
+}
+.opening h1{
+    margin-top: 5vh;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    text-align:center ;
+    color: rgb(205, 155, 29);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    font-size: 7vw;
+    font-weight: lighter;
+}
+
+.opening h2{
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    text-align:center ;
+    color:rgba(0, 0, 0, 0.585);
+    margin-top: 18px; 
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    font-weight: 100; 
+}
+
+.opening h3{
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    text-align:center ;
+    color:rgba(0, 0, 0, 0.450);
+    margin-top: 18px; 
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    font-weight: 100; 
+
+}
+.opening h4{
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    text-align:center ;
+    color:rgba(0, 0, 0, 0.450);
+    margin-top: 18px; 
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    font-weight: 100; 
+}
+.missionStatement {
+    margin-top: 10vh;
+    height:60vh;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    border-top: 2px solid rgba(205, 155, 29, 0.5); 
+    border-bottom: 2px solid rgba(205, 155, 29, 0.5); 
+}
+.missionStatement h1{
+    margin-left: 5vw;
+    color: rgb(205, 155, 29);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    font-size: 3vw;
+    font-weight: lighter;
+    font-style: italic;
+}
+.missionStatement h2{
+    margin: 10vh; /* Adjust margins as needed */
+    color:rgba(0, 0, 0, 0.585);
+    font-size: 1.2vw; 
+    font-family:'Courier New', Courier, monospace;
+    font-weight:100; 
+    width: 50vw;
+    margin-right: 5vw;
+    font-style: italic;
+}
+
+.newsletter{
+    height:40vh;
+    width: 95vw;
+    margin-left: 2.5vw;
+}
+
+.newsletter h1{
+    color: goldenrod;
+    text-align: center;   
+    margin-top: 20vh;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    font-weight: normal;
+}
+
+.newsletterPics{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5vw;
+    width: 90%;
+    height: 30vh;
+    pointer-events: none;
+}
+
+
+.newsletter button {
+    left: 50%;
+    transform: translateX(-50%);    
+    width: 20vw;
+    color: goldenrod;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    font-size: 30px;
+    padding: 10px; 
+    border-color: goldenrod;
+    background-color: white;
+    border-radius: 30px;
+    position: absolute;
+}
+
+.newsletterButton button:hover {
+    color: rgb(216, 185, 106);
+}
+
+.instagramTitle{
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    color: goldenrod;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+}
+
+.footer{
+    width: 100%;
+    height: 40vh;
+    border-top: 5px solid rgba(205, 155, 29, 0.5); 
+    border-radius: 20%;
+}
+
+.footerLogo{
+    text-align: center;
+    margin-top: 5vh;
+    pointer-events: none;
+}
+
+.footerLinks ul{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.footerLinks ul li{
+    list-style: none;
+    margin-top:5vh;
+    margin-left: 1.5vw;
+    font-size: 1vw;
+    white-space: nowrap;
+}
+
+.footerLinks ul li a{
+    text-decoration: none;
+    color:rgb(205, 155, 29);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    transition: ease-in-out 0.4s;
+    text-decoration: underline;
+}
+
+.footLinks ul li a:hover {
+    color: rgb(216, 185, 106);
+}

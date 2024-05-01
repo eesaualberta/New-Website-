@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EESA Webpage</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,14 +14,18 @@
            
             <div class="menu">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">EVENTS</a></li>
-                    <li><a href="#">TEAM</a></li>
-                    <li><a href="#">LOCAL BUSINESSES</a></li>
-                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="team.html">TEAM</a></li>
+                    <li><a href="localBusinesses.html">LOCAL BUSINESSES</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="opportunityBoard.html">OPPORTUNITY BOARD</a></li>
                     <li><a href="#missionStatement">ABOUT</a></li>
                     <li><a href="mailto:eesa@ualberta.ca">CONTACT</a></li>
-                    <li><a href="#">DONATE</a></li>
+                    <li><a href="#donate">DONATE</a></li>
+                    <li><a href="https://www.instagram.com/eesaualberta/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="https://www.tiktok.com/@eesaua" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+                    <li><a href="mailto:eesa@ualberta.ca"><ion-icon name="mail-outline"></ion-icon></a></li>
                 </ul>
             </div>
         </div>
@@ -59,7 +64,7 @@
             <img src='https://eesaualberta.s3.ca-central-1.amazonaws.com/images/gallery/injeraandchill2019/ic+(7).jpg' style="width:21vw; height:14vh;" id="picture26" ></img>
             <img src='https://eesaualberta.s3.ca-central-1.amazonaws.com/images/gallery/injeraandchill2019/ic+(8).jpg' style="width:21vw; height:14vh;" id="picture27" ></img>
             <img src='https://eesaualberta.s3.ca-central-1.amazonaws.com/images/gallery/injeraandchill2019/ic+(9).jpg' style="width:21vw; height:14vh;" id="picture28" ></img>
-            <img src='https://eesaualberta.s3.ca-central-1.amazonaws.com/images/gallery/injeraandchill2019/ic+(10).jpg' style="width:21vw; height:14vh;" id="picture29" ></img>
+            <img src='https://eesaualberta.s3.ca-central-1.amazonaws.com/images/gallery/injeraandchill2019/ic+(10).jpg' style="width:vw; height:14vh;" id="picture29" ></img>
         </div>
 
         <script type="module">
@@ -67,7 +72,6 @@
             window.pictures = injeranchillpics;
             window.pictures2 = galapics
 
-            // Change 3 pictures at once
             let currentIndex = Math.floor(Math.random() * 29);
 
             function changePicture() {
@@ -108,7 +112,7 @@
             }
 
             changePicture();
-            setInterval(changePicture, 4000);
+            setInterval(changePicture, 5000);
         </script>
         <div class="opening">
             <h1>Hello/ሰላም</h1>
@@ -126,7 +130,7 @@
                 unifying one another thus, leading to a friendly 
                 environment as well as increasing success within our community. </h2>
         </div>
-        <div class="newsletter">
+        <div class="newsletter ">
             <h1>Join Our Newsletter</h1>
             <div class="newsletterPics">
                     <img src="./newsletterpics/newsletterpic2.png" id="newsletterpic2" style="width:20%; height:60%";></img>
@@ -137,7 +141,7 @@
             </div>
 
             <div class="newsletterButton">
-                <a href="https://eesanewslettersignup.w3spaces.com/">
+                <a href="https://eesanewslettersignup.w3spaces.com/" target="_blank">
                     <button> Join Today</button>
                 </a>
             </div>
@@ -151,18 +155,32 @@
             (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript"));
             </script>
         </div>
+        <div class="donate" id="donate">
+            <h1>Donations</h1>
+            <h2> To Donate, e-tranfer us @ eesa@ualberta.ca</h2>
+            <h3> We Appreciate it!</h3>
+        </div>
         <div class="footer">
             <div class="footerLogo">
                 <img src="./eesalogo/eesalogo.jpg" style="width: 20vw;" alt="eesalogo.jpg">
             </div>
             <div class="footerLinks">
                 <ul>
-                    <li><a href="#">About</a></li>
+                    <li><a href="index.html#missionStatement">About</a></li>
                     <li><a href="mailto:eesa@ualberta.ca">Contact</a></li>
                     <li><a href="https://www.instagram.com/eesaualberta/" target="_blank">Follow</a></li>
                 </ul>
             </div>
+            <div class="footerIcons">
+                <ul>
+                    <li><a href="https://www.instagram.com/eesaualberta/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="https://www.tiktok.com/@eesaua" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+                    <li><a href="mailto:eesa@ualberta.ca"><ion-icon name="mail-outline"></ion-icon></a></li>
+                </ul>
+            </div>
         </div>   
     </div>
-</body>
-</html>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+    </html>

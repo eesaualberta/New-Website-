@@ -7,70 +7,100 @@
 </head>
 <body>
     <header>
-            <div class ="eesalogo">
-                <img src="./eesalogo/eesalogo.png" alt="eesalogo" ></img>
-                <h1>ERITREAN & ETHIOPIAN STUDENT'S ASSOCIATION | UNIVERSITY OF ALBERTA</h1>
-            </div>
-            <ul class="menu">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="events.html">EVENTS</a></li>
-                    <li><a href="team.html">TEAM</a></li>
-                    <li><a href="localBusinesses.html">LOCAL BUSINESSES</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="opportunityBoard.html">OPPORTUNITY BOARD</a></li>
-                    <li><a href="index.html#missionStatement">ABOUT</a></li>
-                    <li><a href="mailto:eesa@ualberta.ca">CONTACT</a></li>
-                    <li><a href="#donate">DONATE</a></li>
-                    <li><a href="https://www.instagram.com/eesaualberta/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    <li><a href="https://www.tiktok.com/@eesaua" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a></li>
-                    <li><a href="mailto:eesa@ualberta.ca"><ion-icon name="mail-outline"></ion-icon></a></li>
-            </ul>
-            <div class= "menu-icon">
-                <ion-icon name="menu-outline"></ion-icon>
-            </div>
-    </header>
+        <div class ="eesalogo">
+            <img src="./images/eesalogo/eesalogo.png" alt="eesalogo" ></img>
+            <h1>ERITREAN & ETHIOPIAN STUDENT'S ASSOCIATION | UNIVERSITY OF ALBERTA</h1>
+        </div>
+        <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li class="Dropdown">
+                    <a href="events.html">EVENTS</a>
+                    <div class="DropdownContent">
+                        <a href="events.html#eventPosterContainer">UPCOMING EVENTS</a>
+                        <a href="events.html#calendar">CALENDAR</a>
+                    </div>
+                </li>
+                <li class="Dropdown">
+                    <a href="team.html">TEAM</a>
+                    <div class="DropdownContent">
+                        <a href="team.html#teamPhotos">OUR TEAM</a>                        
+                        <a href="team.html#teamButton">JOIN EESA</a>
+                    </div>
+                </li>
+                <li class="Dropdown">
+                    <a href="localBusinesses.html">LOCAL BUSINESSES</a>
+                    <div class="DropdownContent">
+                        <a href="localBusinesses.html#businessSubmission">BUSINESS SUBMISSION</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="opportunityBoard.html">OPPORTUNITY BOARD</a></li>
+                <li><a href="index.html#missionStatement">ABOUT</a></li>
+                <li><a href="mailto:eesa@ualberta.ca">CONTACT</a></li>
+                <li><a href="index.html#donate">DONATE</a></li>
+                <li><a href="https://www.instagram.com/eesaualberta/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="https://www.tiktok.com/@eesaua" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+                <li><a href="mailto:eesa@ualberta.ca"><ion-icon name="mail-outline"></ion-icon></a></li>
+        </ul>
+        <div class= "menu-icon" onclick="menuiconDropdown('menuDropdown','menu-outline')">
+            <ion-icon name="menu-outline" id="menu-outline"></ion-icon>
+        </div>
+        <div id="menuDropdown">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="team.html">TEAM</a></li>
+            <li><a href="localBusinesses.html">LOCAL BUSINESSES</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="opportunityBoard.html">OPPORTUNITY BOARD</a></li>
+            <li><a href="index.html#missionStatement">ABOUT</a></li>
+            <li><a href="mailto:eesa@ualberta.ca">CONTACT</a></li>
+            <li><a href="index.html#donate">DONATE</a></li> 
+        </div>
+</header>
       <div class="events">
         <div class="eventsheader">
-            <img src="/events/pic1.JPG"></img>
-            <img src="/events/pic2.JPG"></img>
-            <img src="/events/pic3.png"></img>
-            <img src="/events/pic5.png"></img>
-            <img src="/events/pic6.png"></img>
+            <img src="./images/events/pic1.JPG"></img>
+            <img src="./images/events/pic2.JPG"></img>
+            <img src="./images/events/pic3.png"></img>
+            <img src="./images/events/pic5.png"></img>
+            <img src="./images/events/pic6.png"></img>
 
         </div>
-        <div class = "eventPosters23-24">
+        <div class = "eventPosters">
             <h1>Events</h1>
-
+            <h2> 2024-25</h2>
+                <div class= "eventPosterContainer24-25"  id="eventPosterContainer">
+                </div>
             <h2>2023-24</h2>
-            <div class= "eventPosterContainer">
-                <a style="text-decoration:none" href="https://www.instagram.com/p/C5hC11Pxlsz/" target="_blank">
-                <img src="./events/InjeraNChill.png"></img> 
-                <figcaption>Injera N' Chill</figcaption>
-                </a>
-                <a style="text-decoration:none" href="https://www.instagram.com/p/C3JFkYvvX_o/" target="_blank"> 
-                <img src="./events/Habaesha.png"></img> 
-                <figcaption>HaBAEsha</figcaption>
-                </a>
-                <a style="text-decoration:none" href="https://www.instagram.com/p/C2MFWDErIdV/" target="_blank">
-                <img src="./events/GameNight2.png"></img>
-                <figcaption>Winter Game Night</figcaption>
-                </a>
-                <a style="text-decoration:none" href="https://www.instagram.com/p/C0DRHhrxGag/" target="_blank"> 
-                <img src="./events/StudyCafe.png"></img> 
-                <figcaption>Study Cafe</figcaption>
-                </a>
-                <a style="text-decoration:none" href="https://www.instagram.com/p/CzcZ8CoPTzj/" target="_blank"> 
-                <img src="./events/DebateNight.png"></img> 
-                <figcaption>Debate Night</figcaption>
-                </a>
-                <a style="text-decoration:none" href="https://www.instagram.com/p/CyERzHhRfkE/" target="_blank"> 
-                <img src="./events/GameNight1.png"></img> 
-                <figcaption>Fall Game Night</figcaption>
-                </a>
-            </div>
+                <div class= "eventPosterContainer23-24">
+                    <a style="text-decoration:none" href="https://www.instagram.com/p/C5hC11Pxlsz/" target="_blank">
+                    <img src="./images/events/InjeraNChill.png"></img> 
+                    <figcaption>Injera N' Chill</figcaption>
+                    </a>
+                    <a style="text-decoration:none" href="https://www.instagram.com/p/C3JFkYvvX_o/" target="_blank"> 
+                    <img src="./images/events/Habaesha.png"></img> 
+                    <figcaption>HaBAEsha</figcaption>
+                    </a>
+                    <a style="text-decoration:none" href="https://www.instagram.com/p/C2MFWDErIdV/" target="_blank">
+                    <img src="./images/events/GameNight2.png"></img>
+                    <figcaption>Winter Game Night</figcaption>
+                    </a>
+                    <a style="text-decoration:none" href="https://www.instagram.com/p/C0DRHhrxGag/" target="_blank"> 
+                    <img src="./images/events/StudyCafe.png"></img> 
+                    <figcaption>Study Cafe</figcaption>
+                    </a>
+                    <a style="text-decoration:none" href="https://www.instagram.com/p/CzcZ8CoPTzj/" target="_blank"> 
+                    <img src="./images/events/DebateNight.png"></img> 
+                    <figcaption>Debate Night</figcaption>
+                    </a>
+                    <a style="text-decoration:none" href="https://www.instagram.com/p/CyERzHhRfkE/" target="_blank"> 
+                    <img src="./images/events/GameNight1.png"></img> 
+                    <figcaption>Fall Game Night</figcaption>
+                    </a>
+                </div>
         </div>
       </div>
-      <div class = "calendar">
+      <div class = "calendar" id="calendar">
         <h1>Calendar</h1>
         <h2>Stay Updated!</h2>
         <h3>With our calendar you can stay updated on any future EESA events and opportunites!</h3>
@@ -79,7 +109,7 @@
       </div>
       <div class="footer">
           <div class="footerLogo">
-              <img src="./eesalogo/eesalogo.jpg" alt="eesalogo.jpg">
+              <img src="./images/eesalogo/eesalogo.jpg" alt="eesalogo.jpg">
           </div>
           <div class="footerLinks">
               <ul>
@@ -96,7 +126,8 @@
               </ul>
           </div>
       </div>   
-  </div>
+    </div>
+  <script src="mobilemenu.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>

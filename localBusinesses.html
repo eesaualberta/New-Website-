@@ -8,35 +8,219 @@
 <body>
     <header>
             <div class ="eesalogo">
-                <img src="./eesalogo/eesalogo.png" alt="eesalogo" ></img>
+                <img src="./images/eesalogo/eesalogo.png" alt="eesalogo" ></img>
                 <h1>ERITREAN & ETHIOPIAN STUDENT'S ASSOCIATION | UNIVERSITY OF ALBERTA</h1>
             </div>
             <ul class="menu">
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="events.html">EVENTS</a></li>
-                    <li><a href="team.html">TEAM</a></li>
-                    <li><a href="localBusinesses.html">LOCAL BUSINESSES</a></li>
+                    <li class="Dropdown">
+                        <a href="events.html">EVENTS</a>
+                        <div class="DropdownContent">
+                            <a href="events.html#eventPosterContainer">UPCOMING EVENTS</a>
+                            <a href="events.html#calendar">CALENDAR</a>
+                        </div>
+                    </li>
+                    <li class="Dropdown">
+                        <a href="team.html">TEAM</a>
+                        <div class="DropdownContent">
+                            <a href="team.html#teamPhotos">OUR TEAM</a>                        
+                            <a href="team.html#teamButton">JOIN EESA</a>
+                        </div>
+                    </li>
+                    <li class="Dropdown">
+                        <a href="localBusinesses.html">LOCAL BUSINESSES</a>
+                        <div class="DropdownContent">
+                            <a href="localBusinesses.html#businessSubmission">BUSINESS SUBMISSION</a>
+                        </div>
+                    </li>
                     <li><a href="gallery.html">GALLERY</a></li>
                     <li><a href="opportunityBoard.html">OPPORTUNITY BOARD</a></li>
-                    <li><a href="#missionStatement">ABOUT</a></li>
+                    <li><a href="index.html#missionStatement">ABOUT</a></li>
                     <li><a href="mailto:eesa@ualberta.ca">CONTACT</a></li>
-                    <li><a href="#donate">DONATE</a></li>
+                    <li><a href="index.html#donate">DONATE</a></li>
                     <li><a href="https://www.instagram.com/eesaualberta/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
                     <li><a href="https://www.tiktok.com/@eesaua" target="_blank"><ion-icon name="logo-tiktok"></ion-icon></a></li>
                     <li><a href="mailto:eesa@ualberta.ca"><ion-icon name="mail-outline"></ion-icon></a></li>
             </ul>
-            <div class= "menu-icon">
-                <ion-icon name="menu-outline"></ion-icon>
+            <div class= "menu-icon" onclick="menuiconDropdown('menuDropdown','menu-outline')">
+                <ion-icon name="menu-outline" id="menu-outline"></ion-icon>
+            </div>
+            <div id="menuDropdown">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="team.html">TEAM</a></li>
+                <li><a href="localBusinesses.html">LOCAL BUSINESSES</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="opportunityBoard.html">OPPORTUNITY BOARD</a></li>
+                <li><a href="index.html#missionStatement">ABOUT</a></li>
+                <li><a href="mailto:eesa@ualberta.ca">CONTACT</a></li>
+                <li><a href="index.html#donate">DONATE</a></li> 
             </div>
     </header>
-      <div class="localBusinesses">
-        <h1>Local Businesses</h1>
-        <div class = "businessPosters">
+      <div class="businessHeader">
+        <h1>Local Eritrean and Ethiopian Businesses</h1>
+        <div class="businessTypes">
+            <div id="AllButton" onclick="businessTypeDisplay('AllButton', '.all')">
+                <ion-icon name="globe-outline"></ion-icon> 
+                <h2>All</h2>  
+            </div>
+            <div id="ResturantsButton" onclick="businessTypeDisplay('ResturantsButton', '.resturant')">
+                <ion-icon name="restaurant-outline"></ion-icon>
+                <h2>Resturants</h2>
+            </div>
+            <div id="HairButton" onclick="businessTypeDisplay('HairButton', '.hair')">
+                <ion-icon name="cut-outline"></ion-icon>           
+                <h2>Hair</h2>
+            </div>  
+            <div id="BeautyButton" onclick="businessTypeDisplay('BeautyButton', '.beauty')">
+                <ion-icon name="brush-outline"></ion-icon>
+                <h2>Beauty</h2>
+            </div>
+            <div id="PhotographyButton" onclick="businessTypeDisplay('PhotographyButton', '.photography')">
+                <ion-icon name="camera-outline"></ion-icon> 
+                <h2>Photography</h2>
+            </div>
+            <div id="OtherButton" onclick="businessTypeDisplay('OtherButton', '.other')">
+                <ion-icon name="add-outline"></ion-icon> 
+                <h2>Other</h2>
+            </div>
+        </div>
+        <div class = "businessContainer">
+            <a style="text-decoration:none" href="https://www.facebook.com/philapictures/" target="_blank" class="photography">
+                <div class="businessPosters"> 
+                    <img src="./images/businessphotos/philapictures.jpeg"></img>
+                    <figcaption>Phila Pictures</figcaption>
+                </div>   
+            </a>
+            <a style="text-decoration:none" href="https://g.co/kgs/VqdFE6M" target="_blank" class="hair">
+                <div class="businessPosters" > 
+                    <img src="https://images.unsplash.com/photo-1596362601603-b74f6ef166e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=926&q=80"></img>
+                    <figcaption>Hinsta's Barbershop</figcaption>
+                </div>   
+            </a>
+            <a style="text-decoration:none" href="https://www.instagram.com/cirocthebarber/?hl=en" target="_blank" class="hair">
+                <div class="businessPosters"> 
+                    <img src="./images/businessphotos/ciroc.jpg"></img>
+                    <figcaption>Ciroc Barber</figcaption>
+                </div>   
+            </a>
+            <a style="text-decoration:none" href="https://www.instagram.com/laidbyyirga/" target="_blank" class="hair">
+                <div class="businessPosters"> 
+                    <img src="./images/businessphotos/laidbyyirga.jpg"></img>
+                    <figcaption>Laid By Yirga</figcaption>
+                </div>   
+            </a>
+            <a style="text-decoration:none" href="https://www.instagram.com/_luxelashextensions/" target="_blank" class="beauty">
+                <div class="businessPosters" > 
+                    <img src="./images/businessphotos/luxelashes.jpg"></img>
+                    <figcaption>Luxe Lashes</figcaption>
+                </div>   
+            </a>
+            <a style="text-decoration:none" href="https://www.instagram.com/shopthequeenstudio/" target="_blank" class="beauty">
+                <div class="businessPosters"> 
+                    <img src="./images/businessphotos/queenstudio.jpg"></img>
+                    <figcaption>The Queen Studio</figcaption>
+                </div>   
+            </a>
+            <a style="text-decoration:none" href="https://www.instagram.com/blisslashesyeg/" target="_blank" class="beauty">
+                <div class="businessPosters"> 
+                    <img src="./images/businessphotos/lash.jpg"></img>
+                    <figcaption>Bliss Lash Extensions</figcaption>
+                </div>   
+            </a>
+            <a style="text-decoration:none" href="https://www.instagram.com/beautybymartha1/" target="_blank" class="beauty">
+                <div class="businessPosters"> 
+                    <img src="./images/businessphotos/beautybymartha.jpg"></img>
+                    <figcaption>Beauty By Martha</figcaption>
+                </div>   
+            </a>
+            <a style="text-decoration:none" href="https://www.instagram.com/buffwaxspot/" target="_blank" class="beauty">
+                <div class="businessPosters"> 
+                    <img src="./images/businessphotos/buffwaxspot.jpg"></img>
+                    <figcaption>Buff Wax Spot</figcaption>
+                </div>   
+            </a>
+            <a style="text-decoration:none" href="https://www.tiramisubistro.ca/" target="_blank" class="resturant">
+                <div class="businessPosters"> 
+                    <img src="./images/businessphotos/tiramisubistro.jpg"></img>
+                    <figcaption>Tiramisu Bistro</figcaption>
+                </div>   
+            </a>
+            <a style="text-decoration:none" href="https://www.instagram.com/lazio_cafe/" target="_blank" class="resturant">
+                <div class="businessPosters"> 
+                    <img src="./images/businessphotos/laziocafe.jpg"></img>
+                    <figcaption>Lazio Cafe</figcaption>
+                </div>   
+            </a>
+            <a style="text-decoration:none" href="https://beteafrica.ca/" target="_blank" class="resturant">
+                <div class="businessPosters"> 
+                    <img src="./images/businessphotos/beteafrica.jpg"></img>
+                    <figcaption>Bete Africa</figcaption>
+                </div>   
+            </a>
+            <a style="text-decoration:none" href="https://www.facebook.com/WEINIYEG/" target="_blank" class="resturant">
+                <div class="businessPosters"> 
+                    <img src="./images/businessphotos/weini.png"></img>
+                    <figcaption>Weini Restaurant</figcaption>
+                </div>   
+            </a>
+            <a style="text-decoration:none" href="https://www.instagram.com/familyinjera/" target="_blank" class="resturant">
+                <div class="businessPosters"> 
+                    <img src="https://10619-2.s.cdn12.com/rests/original/109_505921469.jpg"></img>
+                    <figcaption>Family Injera and Restaurant</figcaption>
+                </div>   
+            </a>
+            <a style="text-decoration:none" href="https://www.facebook.com/AwashEthiopianEdmonton/" target="_blank" class="resturant">
+                <div class="businessPosters"> 
+                    <img src="./images/businessphotos/awash.jpeg"></img>
+                    <figcaption>Awash Ethiopian Restaurant</figcaption>
+                </div>   
+            </a>
+            <a style="text-decoration:none" href="https://g.co/kgs/azdsgrN" target="_blank" class="resturant">
+                <div class="businessPosters"> 
+                    <img src="./images/businessphotos/zembaba.jpg"></img>
+                    <figcaption>Zembaba 2 Ethiopian Restaurant & Bar</figcaption>
+                </div>   
+            </a>
+            <a style="text-decoration:none" href="https://www.gebetaeats.ca/?utm_source=GMBlisting&utm_medium=organic" target="_blank" class="resturant">
+                <div class="businessPosters"> 
+                    <img src="./images/businessphotos/gebeta.webp"></img>
+                    <figcaption>Gebeta Ethiopian Cuisine</figcaption>
+                </div>   
+            </a>
+            <a style="text-decoration:none" href="https://restaurantguru.com/MOMONA-Restaurant-Edmonton#google_vignette" target="_blank" class="resturant">
+                <div class="businessPosters"> 
+                    <img src="https://10619-2.s.cdn12.com/rests/small/w312/h280/505_366517799.jpg"></img>
+                    <figcaption>Momona</figcaption>
+                </div>   
+            </a>
+            <a style="text-decoration:none" href="https://langanoskies.com/" target="_blank" class="a.resturant" >
+                <div class="businessPosters"> 
+                    <img src="https://langanoskies.com/assets/img/gallery1.jpg"></img>
+                    <figcaption>Lagano Skies</figcaption>
+                </div>   
+            </a>
+            <a style="text-decoration:none" href="https://www.facebook.com/africanfooodmarket/" target="_blank" class="other">
+                <div class="businessPosters"> 
+                    <img src="https://lh3.googleusercontent.com/g3MSkY5BXremgb-bK76gRXqgZ3aZIdrQV9IcGPxQLo0-po6tyXZuTKn-TQQQDhRDLTfZRin_Eou3Q8qWGQ=w960-h960-n-o-v1"></img>
+                    <figcaption>Habesha African Market</figcaption>
+                </div>   
+            </a>
+
+        </div>
+        <div class="businessSubmission" id="businessSubmission">
+            <h1>Business Submissions</h1>
+            <h2>If you would like to submit a business to be included please fill out the form below.</h2>
+            <div class="businessSubmissionButton">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeiC8LSD2108Rg_BORauExRiVLBxJbLhh5w6CqjZ5cme3gKVQ/viewform?usp=sf_link" target="_blank">
+                    <button> Submit </button>
+                </a>
+            </div>
         </div>
       </div>
       <div class="footer">
           <div class="footerLogo">
-              <img src="./eesalogo/eesalogo.jpg" alt="eesalogo.jpg">
+              <img src="./images/eesalogo/eesalogo.jpg" alt="eesalogo.jpg">
           </div>
           <div class="footerLinks">
               <ul>
@@ -54,6 +238,8 @@
           </div>
       </div>   
   </div>
+  <script src="mobilemenu.js"></script>
+  <script src="businessdisplay.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>

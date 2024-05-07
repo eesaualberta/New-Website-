@@ -44,7 +44,6 @@ export const injeranchillpics = [
         {src:'https://eesaualberta.s3.ca-central-1.amazonaws.com/images/gallery/injeraandchill2019/ic+(43).jpg', w:600, h:400},
         {src:'https://eesaualberta.s3.ca-central-1.amazonaws.com/images/gallery/injeraandchill2019/ic+(44).jpg', w:600, h:400},
         {src:'https://eesaualberta.s3.ca-central-1.amazonaws.com/images/gallery/injeraandchill2019/ic+(45).jpg', w:600, h:400},
-        {src:'https://eesaualberta.s3.ca-central-1.amazonaws.com/images/gallery/injeraandchill2019/ic+(46).jpg', w:600, h:400},
         {src:'https://eesaualberta.s3.ca-central-1.amazonaws.com/images/gallery/injeraandchill2019/ic+(47).jpg', w:600, h:400},
         {src:'https://eesaualberta.s3.ca-central-1.amazonaws.com/images/gallery/injeraandchill2019/ic+(48).jpg', w:600, h:400},
         {src:'https://eesaualberta.s3.ca-central-1.amazonaws.com/images/gallery/injeraandchill2019/ic+(49).jpg', w:600, h:400},

@@ -4,6 +4,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EESA Webpage</title>
     <link rel="stylesheet" href="style.css">
+
+    <script type="module">
+        import PhotoSwipeLightbox from 'photoswipe/dist/photoswipe-lightbox.esm.js';
+        const lightbox = new PhotoSwipeLightbox({
+          gallery: '#my-gallery',
+          children: 'a',
+          pswpModule: () => import('photoswipe/dist/photoswipe.esm.js')
+        });
+        lightbox.init();
+    </script>
+
+    <link rel="stylesheet" href="photoswipe/dist/photoswipe.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.js"></script>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. 
+             It's a separate element, as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+    
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+    
+            <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+            <div class="pswp__container">
+                <!-- don't modify these 3 pswp__item elements, data is added later on -->
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+    
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+    
+                <div class="pswp__top-bar">
+    
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+    
+                    <div class="pswp__counter"></div>
+    
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+    
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+    
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+    
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+    
+                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div> 
+                </div>
+    
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+    
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+    
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+    
+              </div>
+    
+            </div>
+    
+    </div>
+
 </head>
 <body>
     <header>
@@ -57,11 +145,30 @@
             <li><a href="index.html#donate">DONATE</a></li> 
         </div>
 </header>
+
+
       <div class="gallery">
         <h1>Gallery</h1>
         <div class = "galleryBins">
+            <div class="injeranchill2019">
+                <img src="https://eesaualberta.s3.ca-central-1.amazonaws.com/images/gallery/injeraandchill2019/ic+(32).jpg"></img>
+                <div class="galleryrightside">
+                    <h1>Injera N' Chill 2019</h1>
+                    <button onclick="openInjeraNChill2019()">View Photos</button>                            
+                </div>
+            </div>
+            
+            <div class="gala2019">
+                <img src="https://eesaualberta.s3.ca-central-1.amazonaws.com/images/gallery/gala/gala+(48).jpg"></img>
+                <div class="galleryrightside">
+                    <h1>Gala 2019</h1>
+                    <button onclick="openGala2019()">View Photos</button>
+                </div>
+            </div>
         </div>
       </div>
+
+
       <div class="footer">
           <div class="footerLogo">
               <img src="./images/eesalogo/eesalogo.jpg" alt="eesalogo.jpg">
@@ -82,6 +189,8 @@
           </div>
       </div>   
   </div>
+  <script src="./images/galaphotos2019.js"></script>
+  <script src="./images/injeranchill2019.js"></script>
   <script src="mobilemenu.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

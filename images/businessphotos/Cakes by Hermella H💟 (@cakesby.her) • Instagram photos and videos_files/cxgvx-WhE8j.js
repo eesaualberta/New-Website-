@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("CometRouteRenderType",["CometRouterRenderTypeContext","react"],(function(a,b,c,d,e,f,g){"use strict";var h,i=(h||d("react")).useContext;function a(){var a=i(c("CometRouterRenderTypeContext"));return a==="pushView"}function b(){var a=i(c("CometRouterRenderTypeContext"));return a==="hosted"}function e(){var a=i(c("CometRouterRenderTypeContext"));return a==="main"}g.useIsPushView=a;g.useIsHosted=b;g.useIsMain=e}),98);

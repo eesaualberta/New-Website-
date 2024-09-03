@@ -382,8 +382,6 @@ header{
     font-weight: 100; 
 }
 
-
-
 .eventsheader{
     margin-top: 99px;    
     width:100%;
@@ -414,18 +412,17 @@ header{
     font-weight: 200;
 
 }
-
-.eventPosterContainer23-24,.eventPosterContainer24-25{
+.eventPosterContainer23-24, .eventPosterContainer24-25 {
     display: flex;
     flex-wrap: wrap;
-    width:80%;
-    margin-left: 9%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 4px;
     justify-content: space-between;
-    padding:114px;
-    text-align: center;
+    text-align: center; /* Centers text inside .eventPosters figcaption */
 }
 
-.eventPosters figcaption{
+.eventPosters figcaption {
     text-align: center;
     color: rgb(226, 187, 90);
     font-size: 1.2vw;
@@ -433,14 +430,16 @@ header{
     margin-bottom: 4vh;
 }
 
-.eventPosters img{
-    margin-left: 4vh;
+.eventPosters img {
+    width:33%;
+    margin: 0 auto; /* Center the image horizontally */
     margin-bottom: 5vh;
-    width: 18vw; 
-    align-items: center;
-    justify-content: center;
+    width: 18vw;
+    display: block; /* Ensures margin: 0 auto; works correctly */
     border-radius: 15px;
+    padding:20px;
 }
+
 .eventPosters img:hover{
     transform: scale(1.1);
     filter: drop-shadow(10px 10px 20px rgba(36, 36, 36, 0.5));
@@ -768,7 +767,7 @@ header{
     font-family: Verdana, Geneva, Tahoma, sans-serif;;
     font-size: 1.2vw;
     padding: 8px; 
-    border-color: rgba(0, 0, 0, 0.585);
+    border-color: goldenrod;
     background-color: white;
     border-radius: 30px;
 }
@@ -805,8 +804,8 @@ header{
 @media(max-width:800px){
 
     .injeranchill2019, .gala2019{
-        width:50%;
-        margin-left: 25%;
+        width:70%;
+        margin-left: 15%;
         margin-bottom: 7vh;
         border:3px solid rgba(218, 165, 32, 0.693);
         border-radius: 20px 20px 0 0;
@@ -921,21 +920,19 @@ header{
         white-space: nowrap;
     }
 
-    .eventPosterContainer{
-        display:grid;
+    #eventPosterContainer{
+        flex-direction: column;        
         text-align: center;
-    }
-
-    .eventPosters23-24 img{
-        width: 50vw;
-        margin-left: 15vw;
 
     }
-    .eventPosters23-24 figcaption{
-        font-size: 4vw;
-        margin-left: 15vw;
-    }
 
+    .eventPosters figcaption{
+        font-size: 5vw;
+    }
+    .eventPosters img {
+        width:80%;
+
+    }
     .calendar h3{
         font-size: 3vw; 
     }
@@ -947,8 +944,8 @@ header{
     }
 
     .teamPhotos img{
-        width: 50%;
-        margin-left: 25%;
+        width: 70%;
+        margin-left: 15%;
 
     }
     .teamButton button{

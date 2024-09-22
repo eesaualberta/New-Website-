@@ -726,8 +726,7 @@ header{
     margin-bottom: 50vh;
 }
 
-
-.gallery h1{
+.gallery #Title {
     margin-top: 15vh;
     text-align: center;
     color: goldenrod;
@@ -737,43 +736,54 @@ header{
     margin-bottom: 4vh;
 }
 
-
-.injeranchill2019, .gala2019{
-    display:flex;
-    align-items:center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 100;
-    width:60%;
-    margin-left: 20%;
-    margin-bottom: 7vh;
-    border:3px solid rgba(218, 165, 32, 0.693);
-    border-radius: 20px;
+.galleryBins {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center items when they wrap */
 }
 
-.injeranchill2019 img, .gala2019 img{
-    width:50%;
+
+.injeranchill2019 img, .gala2019 img {
+    width: 50%;
     border-radius: 18px 0 0 18px;
 }
 
-.galleryrightside{
-    width:50%;
-    margin-top:-18vh;
+.galleryrightside {
+    width: 50%; /* Original width for larger screens */
+    display: flex; /* Make it a flex container */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 10px; /* Optional padding */
 }
 
-.injeranchill2019 h1, .gala2019 h1{
-    font-size:2vw;
+.injeranchill2019, .gala2019 {
+    display: flex; /* Ensure it's a flex container */
+    flex-direction: row; /* Original direction */
+    align-items: center; /* Center items vertically */
+    width: 60%; /* Original width for larger screens */
+    margin-bottom: 7vh;
+    border: 3px solid rgba(218, 165, 32, 0.693);
+    border-radius: 20px;
+}
+
+
+.injeranchill2019 h1, .gala2019 h1 {
+    font-size: 2vw;
     text-align: center;
     text-wrap: nowrap;
     color: goldenrod;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    margin-bottom: 4vh;
 }
 
-
-.injeranchill2019 button, .gala2019 button{
-    margin-left: 33%;
+.injeranchill2019 button, .gala2019 button {
     width: 10vw;
     color: rgba(0, 0, 0, 0.585);
     font-weight: 100;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2vw;
     padding: 8px; 
     border-color: goldenrod;
@@ -781,10 +791,11 @@ header{
     border-radius: 30px;
 }
 
-.injeranchill2019 button:hover, .gala2019 button:hover{
+.injeranchill2019 button:hover, .gala2019 button:hover {
     color: rgb(216, 185, 106);
-    cursor:pointer;
+    cursor: pointer;
 }
+
 
 @media (min-width:1071px){
     #menuDropdown{
@@ -809,52 +820,47 @@ header{
         pointer-events: none;
         width: 150px; 
     }
-}
-@media(max-width:800px){
-
-    .injeranchill2019, .gala2019{
-        width:70%;
-        margin-left: 15%;
-        margin-bottom: 7vh;
-        border:3px solid rgba(218, 165, 32, 0.693);
-        border-radius: 20px 20px 0 0;
-    }
-
-    .injeranchill2019,
-    .gala2019 {
-        flex-direction: column;
-        margin-bottom: 7vh;
+}@media (max-width: 800px) {
+    .injeranchill2019, .gala2019 {
+        width: 70%;
+        margin: 0 auto 7vh auto; /* Center and add bottom margin */
         border: 3px solid rgba(218, 165, 32, 0.693);
         border-radius: 20px;
+        display: flex; /* Ensure it's a flex container */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center all child elements */
     }
 
-    .injeranchill2019 img,
-    .gala2019 img {
-        width: 100%;
-        height:23vh;
-        border-radius: 18px 18px 0 0;
+    .injeranchill2019 img, .gala2019 img {
+        width: 100%; /* Full width of the container */
+        height: 23vh; /* Maintain a fixed height */
+        border-radius: 18px 18px 0 0; /* Round the top corners */
     }
-    .galleryrightside{
-        width:100%;
-        justify-content: center;
-        align-items: center;
+
+    .galleryrightside {
+        width: 100%; /* Full width */
+        display: flex; /* Ensure it's a flex container */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center items */
+        justify-content: center; /* Center items vertically */
+        padding: 10px; /* Optional padding */
     }
-    .injeranchill2019 h1,
-    .gala2019 h1 {
-        font-size: 3vw;
-        text-align: center;
-        margin-bottom: 1vh;
+
+    .injeranchill2019 h1, .gala2019 h1 {
+        font-size: 3vw; /* Responsive font size */
+        text-align: center; /* Center the heading */
+        margin-bottom: 1vh; /* Space below the heading */
     }
-    .injeranchill2019 button,
-    .gala2019 button {
-        margin-left: 50%;
-        transform: translateX(-50%);  
-        font-size: 1.5vw;
-        padding: 8px;
-        margin-bottom: 3vh;
-        width: 20vw;
+
+    .injeranchill2019 button, .gala2019 button {
+        margin: 1vh 0 0 0; /* Add space above the button */
+        font-size: 1.5vw; /* Responsive font size */
+        padding: 8px; /* Padding for button */
+        width: 20vw; /* Set button width */
+        border-radius: 30px; /* Add rounded corners */
     }
 }
+
 @media (max-width:472px) {
     .eesalogo h1{
         font-size: 2.1vw;
@@ -953,8 +959,9 @@ header{
     }
 
     .teamPhotos img{
-        width: 70%;
-        margin-left: 15%;
+        width: 60%;
+        height:40vh;
+        margin-left: 20%;
 
     }
     .teamButton button{

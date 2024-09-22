@@ -255,34 +255,34 @@ header{
     color: rgb(216, 185, 106);
     cursor:pointer;
 }
-
-.missionStatement{
-    padding: 140px 40px 140px; /* Adjust the top padding value to match the height of your header */
-    margin-top: 10vh;
-    display: flex; 
-    align-items: center; 
-    background-color:rgb(255, 252, 243) ;
+.missionStatement {
+    padding: 120px 20px; /* Adjust padding */
+    margin-top: 10vh; /* Space above */
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: rgb(255, 252, 243);
+    text-align: center; /* Center text */
 }
 
-.missionStatement h1{
-    width:50%;
-    color: goldenrod;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;;
-    font-size: 3vw;
-    font-weight: lighter;
-    font-style: italic;
-    text-wrap: nowrap;
+.missionStatement h1 {
+    color: goldenrod; /* Text color */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Font family */
+    font-size: 3vw; /* Responsive font size */
+    font-weight: lighter; /* Font weight */
+    font-style: italic; /* Italic style */
+    margin-bottom:8vh; /* Space below h1 */
 }
 
-.missionStatement h2{
-    color:rgba(0, 0, 0, 0.585);
-    font-size: 1.5vw; 
-    font-family:'Courier New', Courier, monospace;
-    font-weight:100; 
-    width: 50vw;
-    font-style: italic;
-
+.missionStatement h2 {
+    color: rgba(0, 0, 0, 0.585); /* Text color */
+    font-size: 2vw; /* Responsive font size */
+    font-family: 'Courier New', Courier, monospace; /* Font family */
+    font-weight: 100; /* Font weight */
+    width: 100%; /* Full width for h2 */
+    font-style: italic; /* Italic style */
 }
+
 .newsletter {
     margin-top: 20vh;
     width: 90%;
@@ -875,7 +875,12 @@ header{
     .slideshow-container-2 img{
         height:12vh;
     }
+    .opening{
+        height:45vh;
+    }
+
     .opening h1{
+        margin-top:15vh;
         font-size:12vw;
     }
     .opening h2, .opening h3, .opening h4{
@@ -887,13 +892,15 @@ header{
     }
     .missionStatement{
         padding:40px 40px 40px; 
+        text-align: center;
+        display:grid;
     }
     .missionStatement h2{
-        font-size: 2.5vw;
+        font-size: 3vw;
         font-weight: 500;
     }
     .missionStatement h1{
-        font-size: 3vw;
+        font-size: 4vw;
     }
     .newsletterpics {
         margin-bottom: 2vw;

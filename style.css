@@ -256,7 +256,7 @@ header{
     cursor:pointer;
 }
 .missionStatement {
-    padding: 120px 20px; /* Adjust padding */
+    padding: 120px 40px; /* Adjust padding */
     margin-top: 10vh; /* Space above */
     display: flex; /* Flexbox for alignment */
     flex-direction: column; /* Stack items vertically */
@@ -880,7 +880,7 @@ header{
     }
 
     .opening h1{
-        margin-top:15vh;
+        margin-top:10vh;
         font-size:12vw;
     }
     .opening h2, .opening h3, .opening h4{

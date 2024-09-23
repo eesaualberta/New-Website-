@@ -63,6 +63,9 @@ header{
     cursor: pointer;
 }
 
+.eesalogo{
+    text-decoration:none;
+}
 
 .eesalogo img {
     pointer-events: none; 

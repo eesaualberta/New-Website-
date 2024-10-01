@@ -279,11 +279,11 @@ header{
 
 .missionStatement h2 {
     color: rgba(0, 0, 0, 0.585); /* Text color */
-    font-size: 2vw; /* Responsive font size */
+    font-size: 1.8vw; /* Responsive font size */
     font-family: 'Courier New', Courier, monospace; /* Font family */
     font-weight: 100; /* Font weight */
     width: 100%; /* Full width for h2 */
-    font-style: italic; /* Italic style */
+    line-height: 1.5; 
 }
 
 .newsletter {
@@ -502,12 +502,34 @@ header{
     margin-left: 20vw;
 }
 
-.teamheader{
+.teamheader {
     margin-top: 15vh;    
     text-align: center;
     color: goldenrod;
     font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.AboutUsMission h1{
+    text-align: center;
+    color: goldenrod;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.AboutUsMission .MissionStatementContainer{
+    margin-top: 30px;
+    background-color: rgb(255, 252, 246);
+    
+}
+
+.AboutUsMission h2{
+    font-size: 20px;
+    font-weight: 100;
+    padding: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(0, 0, 0, 0.585);
+    line-height: 1.5; 
 }
 
 .teamheader img{

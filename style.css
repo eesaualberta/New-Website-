@@ -28,40 +28,39 @@ header{
 }
 #menuDropdown {
     list-style: none;
-    display: none;
+    display: none; /* Initially hidden */
     flex-direction: column;
     background-color: white;
     z-index: 1;
-    position: absolute;
-    margin-top: 80vh;    
-    height: 70vh;
+    position: fixed; /* Fixed positioning */
+    top: 10vh; /* Start below the header */
+    height: 90vh; /* Fill the remaining height */
     width: 100%;
     right: 0;
     text-align: center;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+#menuDropdown ul {
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
 }
 
 #menuDropdown li {
-    flex: 1; /* Allow items to grow evenly */
-    margin: 0; /* Remove margin */
-    display: flex; /* Use flex for the anchor */
-    justify-content: center; /* Center the anchor */
-    align-items: center; /* Center the anchor vertically */
-    border-bottom: 0.5px solid goldenrod; /* Goldenrod border */
-
+    border-bottom: 0.5px solid goldenrod; /* Optional */
 }
 
-#menuDropdown li a {
-    font-size: 15px;
-    text-decoration: none;
+#menuDropdown a {
+    display: block; /* Make links fill their parent */
+    padding: 15px; /* Add some padding for clickable area */
     color: rgb(205, 155, 29);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 10px 0; /* Add padding for clickable area */
+    text-decoration: none;
 }
 
 #menuDropdown a:hover {
     color: rgb(255, 218, 125);
-    cursor: pointer;
 }
+
 
 .eesalogo{
     text-decoration:none;

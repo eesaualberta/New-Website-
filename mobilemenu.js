@@ -1,11 +1,12 @@
-function menuiconDropdown(menuDropdown, menuIcon){
-    var x = document.getElementById(menuDropdown)
-    var y = document.getElementById(menuIcon)
-    if (x.style.display === 'none' ){
-        x.style.display = 'flex';
-        y.style.transform = 'rotate(90deg)';
-    } else{
-        x.style.display = 'none';
-        y.style.transform = 'rotate(0deg)';
+function menuiconDropdown(menuId, iconId) {
+    const menu = document.getElementById(menuId);
+    const icon = document.getElementById(iconId);
+    
+    if (menu.style.display === "none" || menu.style.display === "") {
+        menu.style.display = "flex"; // Show the menu
+        icon.name = "close"; // Change icon to "close" if you have a close icon
+    } else {
+        menu.style.display = "none"; // Hide the menu
+        icon.name = "menu-outline"; // Change icon back to "menu"
     }
 }

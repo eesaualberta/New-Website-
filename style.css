@@ -519,13 +519,12 @@ header{
 .AboutUsMission .MissionStatementContainer{
     margin-top: 30px;
     background-color: rgb(255, 252, 246);
-    
 }
 
 .AboutUsMission h2{
     font-size: 20px;
     font-weight: 100;
-    padding: 100px;
+    padding: 10vw;
     font-family: 'Courier New', Courier, monospace;
     color: rgba(0, 0, 0, 0.585);
     line-height: 1.5; 
@@ -848,7 +847,9 @@ header{
     .AboutUsMission h2{
         font-size: 2.3vw;
     }
-}@media (max-width: 800px) {
+}
+
+@media (max-width: 800px) {
     .injeranchill2019, .gala2019 {
         width: 70%;
         margin: 0 auto 7vh auto; /* Center and add bottom margin */

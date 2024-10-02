@@ -844,6 +844,10 @@ header{
         pointer-events: none;
         width: 150px; 
     }
+
+    .AboutUsMission h2{
+        font-size: 2.3vw;
+    }
 }@media (max-width: 800px) {
     .injeranchill2019, .gala2019 {
         width: 70%;

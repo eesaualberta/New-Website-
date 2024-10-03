@@ -505,15 +505,16 @@ header{
     margin-top: 15vh;    
     text-align: center;
     color: goldenrod;
-    font-size: 40px;
+    font-size: 4vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .AboutUsMission h1{
     text-align: center;
     color: goldenrod;
-    font-size: 40px;
+    font-size: 4vw;
     font-weight: 100;
+    margin-bottom: 4vh;
 }
 
 .AboutUsMission .MissionStatementContainer{
@@ -538,28 +539,56 @@ header{
 .team h1{
     text-align: center;
     color: goldenrod;
-    font-size: 40px;
+    font-size: 4vw;
     font-weight: 100;
+    margin-bottom: 4vh;
 }
 
-.teamPhotos{
+.teamPhotos {
     display: flex;
-    flex-wrap: wrap;
-    width:90vw;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    width: 90vw;
     margin-left: 5vw;
-    justify-content: space-between;
-    padding-top: 70px;
-}
-.teamPhotos img{
-    margin-bottom: 5vh;
-    width: 200px; 
-    height: 30vh;
-    border-radius: 20px;
-    margin-right: 2vw;
+    margin-top: 5vh;
+    justify-content: space-between; /* Distribute space evenly */
 }
 
-.teamPhotos img:hover{
-    transform: scale(1.2);
+.teamMember {
+    text-align: center; 
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: space-between; /* Space between image and email */
+    margin: 5px;
+    width: 17vw; /* Adjust as needed */
+    border: 2px solid transparent; /* Optional: Add border for consistency */
+}
+
+.teamPhotos img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; 
+    border-radius: 20px;
+    margin-bottom: 10px; /* Space between image and email */
+}
+
+.teamPhotos img:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+.teamPhotos a {
+    font-size: 1.2vw; /* Responsive font size */
+    color: goldenrod; 
+    text-decoration: none; 
+    display: block; 
+    margin-bottom: 30px; /* Space between email link and bottom */
+    margin-top: auto; /* Push email link to bottom if space allows */
+}
+
+
+.teamPhotos a:hover {
+    color: black; /* Keep color on hover */
 }
 
 .teamButton{
@@ -987,19 +1016,28 @@ header{
     .calendar h3{
         font-size: 3vw; 
     }
-
+    .teamheader h1{
+        font-size: 7vw;
+    }
     .teamPhotos{
         display:grid;
         text-align: center;
         justify-content:center;
     }
 
-    .teamPhotos img{
-        width: 60%;
-        height:40vh;
-        margin-left: 20%;
-
+    .teamMember{
+        width: 100%;
+        height:auto;
     }
+
+    .teamMember img{
+        width: 70vw;
+        height:40vh;
+    }
+    .teamMember a{
+        font-size: 5vw;;
+    }
+   
     .teamButton button{
         width:50%;
         font-size: 3vw;

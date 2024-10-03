@@ -559,7 +559,7 @@ header{
     flex-direction: column; /* Stack children vertically */
     align-items: center; /* Center children horizontally */
     justify-content: space-between; /* Space between image and email */
-    margin: 5px;
+    margin: 7px;
     width: 17vw; /* Adjust as needed */
     border: 2px solid transparent; /* Optional: Add border for consistency */
 }
@@ -569,11 +569,11 @@ header{
     height: auto; /* Maintain aspect ratio */
     display: block; 
     border-radius: 20px;
-    margin-bottom: 10px; /* Space between image and email */
+    margin-bottom: 20px; /* Space between image and email */
 }
 
 .teamPhotos img:hover {
-    transform: scale(1.2); /* Slight zoom on hover */
+    transform: scale(1.1); /* Slight zoom on hover */
     transition: transform 0.3s; /* Smooth transition */
 }
 

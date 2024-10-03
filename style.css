@@ -364,23 +364,17 @@ header{
     cursor:pointer;
 }
 
-.instagramTitle {
-    margin-top: 20vh;
-    margin-bottom: 5vh;
-    text-align: center;
-    color: goldenrod;
-    font-size: 3vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-left:4vw;
+.instagramFeed{
+    margin-top: 10vh;
 }
 
 .donate h1{
-    top: 99px;
-    margin-top: 5vh;
+    margin-top: 10vh;
     text-align: center;
     color: goldenrod;
-    font-size: 30px;
+    font-size: 3vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    font-weight: normal;
 }
 
 .donate h2, .donate h3{
@@ -391,6 +385,8 @@ header{
     font-family:'Courier New', Courier, monospace;
     font-size: 1.5vw;
     font-weight: 100; 
+    margin-bottom: 15vh;
+
 }
 
 .eventsheader{
@@ -975,9 +971,10 @@ header{
         font-weight: 500;
     }       
 
-    .instagramTitle{
+    .donate h1{
         font-size: 6vw;
     }
+
     .donate h2, .donate h3{
         color:rgba(0, 0, 0, 0.585);
         text-align:center;

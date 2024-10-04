@@ -634,8 +634,8 @@ header{
     flex-direction: column; /* Stack icon above text */
     align-items: center; /* Center content */
     justify-content: center; /* Center content */
-    width: 8vw; /* Fixed width for consistency */
-    padding: 8px; /* Padding inside button */
+    width: 6vw; /* Fixed width for consistency */
+    padding: 8px 0 8px 0; /* Padding inside button */
     border: 2px solid; /* Border around button */
     border-color: rgb(239, 192, 74); /* Border color */
     border-radius: 10px; /* Rounded corners */
@@ -1053,10 +1053,16 @@ header{
         width:50%;
         font-size: 3vw;
     }
-    .businessTypes{
-        width:60%;
-        margin-left: 20%;
+    .businessTypes {
+        width:70%;
+        margin-left: 15%;
     }
+
+    .businessTypes div{
+        width:10vw;
+    }
+    
+
 
     .businessTypes ion-icon{
         font-size:6vw;

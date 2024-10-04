@@ -265,26 +265,28 @@ header{
     display: flex; /* Flexbox for alignment */
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
-    background-color: rgb(255, 252, 243);
+    background-color: rgb(255, 252, 246);
     text-align: center; /* Center text */
 }
 
 .missionStatement h1 {
-    color: goldenrod; /* Text color */
-    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Font family */
-    font-size: 3vw; /* Responsive font size */
-    font-weight: lighter; /* Font weight */
-    font-style: italic; /* Italic style */
-    margin-bottom:8vh; /* Space below h1 */
+    margin-top: 0; 
+    padding-top: 5vh; 
+    text-align: center;
+    color: goldenrod;
+    font-size: 4vw;
+    font-weight: 100;
+    margin-bottom: 2vh;
 }
 
 .missionStatement h2 {
-    color: rgba(0, 0, 0, 0.585); /* Text color */
-    font-size: 1.8vw; /* Responsive font size */
-    font-family: 'Courier New', Courier, monospace; /* Font family */
-    font-weight: 100; /* Font weight */
-    width: 100%; /* Full width for h2 */
-    line-height: 1.5; 
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 100;
+    padding:10vh;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(0, 0, 0, 0.585);
+    line-height: 2;
 }
 
 .newsletter {
@@ -330,7 +332,6 @@ header{
     color: goldenrod;
     text-align: center;
     font-size: 3vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     margin-bottom: 5vh;
     margin-left: 4vw;
@@ -375,7 +376,6 @@ header{
     text-align: center;
     color: goldenrod;
     font-size: 3vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;;
     font-weight: normal;
 }
 
@@ -408,7 +408,6 @@ header{
     text-align: center;
     color: goldenrod;
     font-size: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
 }
 
@@ -470,7 +469,6 @@ header{
     text-align: center;
     color: goldenrod;
     font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;;
 }
 
 .calendar h2{
@@ -499,47 +497,43 @@ header{
     margin-left: 20vw;
 }
 
-.teamheader {
-    margin-top: 15vh;    
-    text-align: center;
-    color: goldenrod;
-    font-size: 4vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.AboutUsMission {
+    margin-top: 10vh; 
 }
 
-.AboutUsMission h1{
-    text-align: center;
-    color: goldenrod;
-    font-size: 4vw;
-    font-weight: 100;
-    margin-bottom: 4vh;
-}
-
-.AboutUsMission .MissionStatementContainer{
-    margin-top: 30px;
+.AboutUsMission .MissionStatementContainer {
     background-color: rgb(255, 252, 246);
 }
 
-.AboutUsMission h2{
-    font-size: 20px;
-    font-weight: 100;
-    padding: 10vw;
-    font-family: 'Courier New', Courier, monospace;
-    color: rgba(0, 0, 0, 0.585);
-    line-height: 1.5; 
-}
-
-.teamheader img{
-    display:none;
-    width:100%;
-}
-
-.team h1{
+.AboutUsMission h1 {
+    margin-top: 0; 
+    padding-top: 5vh; 
     text-align: center;
     color: goldenrod;
     font-size: 4vw;
     font-weight: 100;
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
+}
+
+.AboutUsMission h2 {
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 100;
+    padding:10vh;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(0, 0, 0, 0.585);
+    line-height: 2;
+}
+
+
+
+.team h1{
+    margin-top: 2vh;
+    text-align: center;
+    color: goldenrod;
+    font-size: 4vw;
+    font-weight: 100;
+    margin-bottom: 6vh;
 }
 
 .teamPhotos {
@@ -619,7 +613,6 @@ header{
     text-align: center;
     font-size: 30px;
     color: goldenrod;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
     width:90%;
     margin-left: 5%;
@@ -761,7 +754,6 @@ header{
     text-align: center;
     font-size: 30px;
     color: goldenrod;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
     width:90%;
     margin-left: 5%;
@@ -783,7 +775,6 @@ header{
     text-align: center;
     color: goldenrod;
     font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
     margin-bottom: 4vh;
 }
@@ -826,7 +817,6 @@ header{
     text-wrap: nowrap;
     color: goldenrod;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
     margin-bottom: 4vh;
 }
@@ -960,10 +950,12 @@ header{
     }
     .missionStatement h2{
         font-size: 3vw;
-        font-weight: 500;
+        padding:0;
+        font-weight:normal;
     }
+
     .missionStatement h1{
-        font-size: 4vw;
+        font-size: 7vw;
     }
     .newsletterpics {
         margin-bottom: 2vw;
@@ -1027,8 +1019,15 @@ header{
     .calendar h3{
         font-size: 3vw; 
     }
-    .teamheader h1{
+    .teamheader h1, .AboutUsMission h1{
         font-size: 7vw;
+        margin-bottom: 0;
+    }
+
+    .AboutUsMission h2{
+        font-size: 3vw;
+        padding:7vh;
+        font-weight: normal;
     }
     .teamPhotos{
         display:grid;
@@ -1039,6 +1038,7 @@ header{
     .teamMember{
         width: 100%;
         height:auto;
+        margin:0;
     }
 
     .teamMember img{

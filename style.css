@@ -786,7 +786,7 @@ header{
 }
 
 
-.injeranchill2019 img, .gala2019 img {
+.injeranchill2019 img, .gala2019 img, .fallGameNight2024 img {
     width: 50%;
     border-radius: 18px 0 0 18px;
 }
@@ -800,7 +800,7 @@ header{
     padding: 10px; /* Optional padding */
 }
 
-.injeranchill2019, .gala2019 {
+.injeranchill2019, .gala2019, .fallGameNight2024{
     display: flex; /* Ensure it's a flex container */
     flex-direction: row; /* Original direction */
     align-items: center; /* Center items vertically */
@@ -811,7 +811,7 @@ header{
 }
 
 
-.injeranchill2019 h1, .gala2019 h1 {
+.injeranchill2019 h1, .gala2019 h1 ,.fallGameNight2024 h1{
     font-size: 2vw;
     text-align: center;
     text-wrap: nowrap;
@@ -821,7 +821,7 @@ header{
     margin-bottom: 4vh;
 }
 
-.injeranchill2019 button, .gala2019 button {
+.injeranchill2019 button, .gala2019 button, .fallGameNight2024 button {
     width: 10vw;
     color: rgba(0, 0, 0, 0.585);
     font-weight: 100;
@@ -833,7 +833,7 @@ header{
     border-radius: 30px;
 }
 
-.injeranchill2019 button:hover, .gala2019 button:hover {
+.injeranchill2019 button:hover, .gala2019 button:hover, .fallGameNight2024 button:hover {
     color: rgb(216, 185, 106);
     cursor: pointer;
 }
@@ -869,7 +869,7 @@ header{
 }
 
 @media (max-width: 800px) {
-    .injeranchill2019, .gala2019 {
+    .injeranchill2019, .gala2019, .fallGameNight2024 {
         width: 70%;
         margin: 0 auto 7vh auto; /* Center and add bottom margin */
         border: 3px solid rgba(218, 165, 32, 0.693);
@@ -879,7 +879,7 @@ header{
         align-items: center; /* Center all child elements */
     }
 
-    .injeranchill2019 img, .gala2019 img {
+    .injeranchill2019 img, .gala2019 img, .fallGameNight2024 h1{
         width: 100%; /* Full width of the container */
         height: 23vh; /* Maintain a fixed height */
         border-radius: 18px 18px 0 0; /* Round the top corners */
@@ -894,13 +894,13 @@ header{
         padding: 10px; /* Optional padding */
     }
 
-    .injeranchill2019 h1, .gala2019 h1 {
+    .injeranchill2019 h1, .gala2019 h1, .fallGameNight2024 h1 {
         font-size: 3vw; /* Responsive font size */
         text-align: center; /* Center the heading */
         margin-bottom: 1vh; /* Space below the heading */
     }
 
-    .injeranchill2019 button, .gala2019 button {
+    .injeranchill2019 button, .gala2019 button, .fallGameNight2024 button{
         margin: 1vh 0 0 0; /* Add space above the button */
         font-size: 1.5vw; /* Responsive font size */
         padding: 8px; /* Padding for button */

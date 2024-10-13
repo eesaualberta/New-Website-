@@ -3,10 +3,9 @@ var openGameNight2024 = function (){
 
     // Build items array
     var items = [];
-    for (let i = 1; i <= 70; i++) {
-        const imgNumber = String(i).padStart(4, '0');
+    for (let i = 1; i <= 69; i++) {
         items.push({
-            src: `images/fallgamenight2024/${imgNumber}.JPG`,
+            src: `images/fallgamenight2024/${i}.JPG`,
             w: 600,
             h: 400 
         });

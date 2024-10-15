@@ -881,7 +881,7 @@ header{
 
     .injeranchill2019 img, .gala2019 img, .fallGameNight2024 img{
         width: 100%; /* Full width of the container */
-        height: 23vh; /* Maintain a fixed height */
+        height: 25vh; /* Maintain a fixed height */
         border-radius: 18px 18px 0 0; /* Round the top corners */
     }
 

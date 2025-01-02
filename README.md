@@ -7,15 +7,10 @@ Welcome to the Eritrean and Ethiopian Students' Association Webpage website repo
 
 ## Table of Contents
 
-- [About](#about)
 - [Features](#features)
 - [Demo](#demo)
 - [Technologies Used](#technologies-used)
 
-
-## About
-
-EESAU Alberta is committed to [insert a brief description of the organization's mission, vision, and goals]. Our website connects the community with resources, events, and information about our initiatives.
 
 ## Features
 
